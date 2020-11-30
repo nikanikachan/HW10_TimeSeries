@@ -17,9 +17,9 @@ Next, I used an ARMA model from the statsmodel libary to forecast returns. For t
 
 ![ARMAFORECAST](Images/armaforecast.png)
 
-Next, I used an ARIMA model with order 5,1,1 to forecast settle prices. This forecast shows that the raw settle price for yenfutures will increase in the next 5 days. 
+Then I used an ARIMA model with order 5,1,1 to forecast settle prices. This forecast shows that the raw settle price for yenfutures will increase in the next 5 days. 
 
-![ARIMAFORECAST](Images/arimaforecast.png)
+![ARIMAFORECAST](Images/ARIMAforecast.png)
 
 Next, I forecasted volatility of yenfutures using  the GARCH with order 2,1. Based on the plot below, the 5 day volatility is expected to increase. 
 
