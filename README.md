@@ -1,5 +1,5 @@
-# HW10_TimeSeries
-Homework 10 Time Series Analysis and Linear Regression
+# Time Series Analysis and Linear Regression
+Homework Unit 10
 
 ### Time Series Forecasting
 
