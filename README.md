@@ -7,11 +7,11 @@ This is an analysis of the dollar-yen exchange rate futures using time series fo
 
 ![HPfilter](Images/HPfilter.png)
 
-Although the trend line seems similar to the settle price, the graph below that shows the noise, shows how much of the noise was actually removed.
+Although the trend line seems similar to the settle price line, the graph below which shows the noise component, shows how much of the actual noise was removed.
 
 ![HPfilter](Images/Noise.png)
 
-Next, I used an ARMA model from the statsmodel libary to forecast returns. For this model, I used an order of 2,1. The forecast for the next 5 day of returns are shown in the plot below. It shows that the ARMA model predicts lower returns in the next 5 days. 
+Next, I used an ARMA model from the statsmodel libary to forecast returns. For this model, I used an order of 2,1. The forecast for the next 5 days of returns are shown in the plot below. It shows that the ARMA model predicts lower returns in the next 5 days. 
 
 ![ARMAFORECAST](Images/armaforecast.png)
 
@@ -19,13 +19,13 @@ Then I used an ARIMA model with order 5,1,1 to forecast settle prices. This fore
 
 ![ARIMAFORECAST](Images/ARIMAforecast.png)
 
-Next, I forecasted volatility of yenfutures using  the GARCH with order 2,1. Based on the plot below, the 5 day volatility is expected to increase. 
+Lastly, I forecasted volatility of yenfutures using GARCH with order 2,1. The plot predicts the 5 day volatility  to increase. 
 
 ![GARCHvol](Images/volatility.png)
 
 
 #### Conclusions on Time Series Forecasting
-Based on the above, I would not buy the yen at the moment. Not because I think I would lose money but more because all 3 models did not seem to be a good fit. The P values were very high and the AIC and BIC values were high. It seems like the results are inconclusive and I would not be confident in using these models to trade yen futures. What I can probably do to improve the model's fit is to change the autoregression and lag values (p and q) to see whether I get better fitting models.
+Based on the above, I would not buy the yen at the moment. Not because I think I would lose money but more because all 3 models did not seem to be a good forecasting models. The P values were very high and the AIC and BIC values were high. It seems like the results are inconclusive and I would not be confident in using these models to trade yen futures. What I can probably do to improve the model's fit is to change the autoregression and lag values (p and q) to see whether I get better fitting models.
 
 
 
