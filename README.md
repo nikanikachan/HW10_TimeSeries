@@ -3,9 +3,7 @@ Homework Unit 10
 
 ### Time Series Forecasting
 
-This is an analysis of the dollar-yen exchange rate futures using time series forecast methods.
-
-First, I used the Hodrick_Prescott Filter (HP Filter) to decompare the futures settle price into its trend and noise components. Below is a graph of the settle price against the trend line:
+This is an analysis of the dollar-yen exchange rate futures using time series forecast methods. After formatting the data and trimming it to begin on January 1, 1990, I used the Hodrick_Prescott Filter (HP Filter) to decompose the futures settle price into its trend and noise components. Below is a graph of the settle price against the trend line:
 
 ![HPfilter](Images/HPfilter.png)
 
